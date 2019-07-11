@@ -15,6 +15,5 @@ public class LetterCheck {
             else
                 System.out.println(word.charAt(i) +" is consonant");
         }
-
     }
 }
