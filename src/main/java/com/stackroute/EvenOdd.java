@@ -1,3 +1,5 @@
+package com.stackroute;
+
 import java.util.Scanner;
 public class EvenOdd {
     public static void main(String[] args)
@@ -6,7 +8,7 @@ public class EvenOdd {
         System.out.print("Enter a number: ");
         int num= input.nextInt();
         if(num>20 && num<30) {
-           if(num % 2==0){
+            if(num % 2==0){
                 System.out.println("Jerry");
             } else
                 System.out.println("Tom");
