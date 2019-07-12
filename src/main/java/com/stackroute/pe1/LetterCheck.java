@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.pe1;
 import java.util.Scanner;
 
 public class LetterCheck {
@@ -15,5 +15,6 @@ public class LetterCheck {
             else
                 System.out.println(word.charAt(i) +" is consonant");
         }
+
     }
 }
