@@ -15,7 +15,8 @@ public class EvenOddTest {
     }
 
     @After
-    public void teardown() {
+    public void teardown()
+    {
         evenOdd = null;
     }
 
