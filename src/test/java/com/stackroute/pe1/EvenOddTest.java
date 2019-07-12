@@ -11,7 +11,7 @@ public class EvenOddTest {
     @Before
     public void setup() {
         //        arrange
-        this.evenOdd = new EvenOdd();
+        evenOdd = new EvenOdd();
     }
 
     @After
@@ -20,23 +20,21 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenAnEvenNumberBetween20to30ShouldReturnTom() {
+    public void givenEvenNumberBetween20to30ShouldReturnString() {
 //        act
         String actualresult = evenOdd.even(24);
 
 //        assert
-        assertNotNull(actualresult);
         assertEquals("Jerry", actualresult);
 
     }
 
     @Test
-    public void givenAOddNumberShouldReturnJerry() {
+    public void givenOddNumberShouldReturnStrings() {
 //        act
         String actualresult = evenOdd.even(25);
 
 //        assert
-        assertNotNull(actualresult);
         assertEquals("Tom", actualresult);
     }
 }

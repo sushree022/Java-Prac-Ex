@@ -1,16 +1,20 @@
 package com.stackroute.pe1;
-import java.util.Scanner;
+
 public class Pattern {
-    public static void main(String[]args)
+    public int[] numpattern(int num)
     {
-        Scanner input= new Scanner(System.in);
-        System.out.print("Enter a number");
-        int num= input.nextInt();
-        for(int i=1; i<=num; i++)
-            for(int j=0; j<i; j++)
+        int size = 0;
+        int index = 0;
+        for (int i = 1; i <= num; i++) size += i;
+        int[] result = new int[size];
+        for (int i = 1; i <= num; i++)
         {
-            System.out.print(i+ " ");
+            for (int j = 0; j < i; j++)
+            {
+                result[index] = i;
+                index++;
+            }
         }
+        return result;
     }
 }
-

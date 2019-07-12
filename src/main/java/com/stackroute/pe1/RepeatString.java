@@ -1,7 +1,7 @@
 package com.stackroute.pe1;
 import java.util.Scanner;
 
-public class Repeat_String {
+public class RepeatString {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

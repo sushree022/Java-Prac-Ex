@@ -6,13 +6,13 @@ public class Pallindrome {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num = input.nextInt();
-        int r, rnum = 0, temp = num, sum=0, rem;
+        int rem, rnum = 0, temp = num, sum=0;
         while (num != 0)
         {
-            r = num % 10;
-            rnum = (rnum * 10) + r;
+            rem = num % 10;
+            rnum = (rnum * 10) + rem;
             num = num / 10;
-            sum= sum+r;
+            sum= sum+rem;
         }
 
         if (temp == rnum) {

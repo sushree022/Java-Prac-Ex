@@ -2,7 +2,7 @@ package com.stackroute.pe1;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Num_Guess {
+public class NumGuess {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
         Random num = new Random();
