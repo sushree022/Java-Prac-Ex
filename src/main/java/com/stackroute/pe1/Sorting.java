@@ -1,12 +1,8 @@
 package com.stackroute.pe1;
-import java.util.Scanner;
 
 public class Sorting {
-    public static void main(String []args)
+    public int digitsorting(int num)
     {
-        Scanner input= new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num= input.nextInt();
         int i=0;
         int temp;
         int sum=0;
@@ -16,7 +12,7 @@ public class Sorting {
             arr[i] = num % 10;
             if(arr[i]%2==0)
             {
-                sum+=arr[i];
+                sum= sum+ arr[i];
             }
             num = num/10;
             i++;
@@ -36,13 +32,9 @@ public class Sorting {
             }
         }
         for(int j=0;j<i;j++){
-            System.out.print(arr[j]);
+            return (arr[j]);
         }
-        System.out.println("\n Sum of even numbers is "+sum);
-        if(sum>15){
-            System.out.println("True");
-        }else
-            System.out.println("False");
+        return (sum);
     }
     }
 

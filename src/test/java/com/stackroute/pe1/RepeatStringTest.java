@@ -4,29 +4,35 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-//import static org.junit.Assert.*;
-//
-//public class RepeatStringTest {
-//    RepeatString repeatString;
-//
-//    @Before
-//    public void setup()
-//    {
-////        arrange
-//        repeatString= new RepeatString();
-//    }
-//    @After
-//    public void teardown()
-//    {
-//        repeatString= null;
-//    }
-//
-//    @Test
-//    public void trimstring()
-//    {
-////        act
-//        String actualresult= this.repeatString.trimstring("sushreereereeree");
-////        assert
-//
-//    }
-//}
+import static org.junit.Assert.*;
+
+public class RepeatStringTest {
+    RepeatString repeatString;
+
+    @Before
+    public void setup()
+    {
+//        arrange
+        repeatString= new RepeatString();
+    }
+    @After
+    public void teardown()
+    {
+        repeatString= null;
+    }
+
+    @Test
+    public void givenStringShouldReturnStringPlusTrimString()
+    {
+//        act
+     String actualresult= this.repeatString.trimstring("sushree",3);
+
+//        assert
+        assertEquals("sushreereereeree", actualresult);
+    }
+    @Test(expected = NullPointerException.class)
+    public void givenStringShouldReturnNullPointerException()
+    {
+        this.repeatString.trimstring(null,0);
+    }
+}
