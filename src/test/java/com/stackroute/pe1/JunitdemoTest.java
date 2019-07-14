@@ -62,20 +62,10 @@ public class JunitdemoTest {
         assertEquals("olleH", actualresult);
     }
 
-    @org.junit.Test
-    public void concatAndUpperCase() {
-    }
-
-    @org.junit.Test
-    public void reverseString() {
+    @Test(expected = NullPointerException.class)
+    public void givenStringShouldReturnNullPointerException()
+    {
+        this.junitdemo.reverseString(null);
     }
 }
-//
-//        public void givenNullShouldThrowNullPointException()
-//    {
-////        act
-//        String actualresult=junitdemo.reverseString(null);
-////        assert
-//        assertEquals("null pointer exception", actualresult);
-//
-//    }
+

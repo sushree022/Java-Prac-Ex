@@ -10,7 +10,8 @@ public class PatternTest {
     Pattern pattern;
 
     @Before
-    public void setUp() {
+    public void setUp()
+    {
         this.pattern = new Pattern();
     }
     @After

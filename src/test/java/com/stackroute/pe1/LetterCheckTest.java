@@ -1,5 +1,6 @@
 package com.stackroute.pe1;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,6 +15,11 @@ public class LetterCheckTest {
 //        arrange
         this.letterCheck= new LetterCheck();
     }
+    @After
+    public void teardown()
+    {
+        letterCheck= null;
+    }
 
     @Test
     public void givenStringShouldReturnLetterTypeForEachLetter() {
@@ -23,5 +29,10 @@ public class LetterCheckTest {
         String[] expected= {"vowel", "consonant"};
         assertArrayEquals(expected,actualresult);
 
+    }
+    @Test(expected = NullPointerException.class)
+    public void givenStringShouldReturnNullPointerException()
+    {
+        this.letterCheck.checkword(null);
     }
 }
