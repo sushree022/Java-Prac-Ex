@@ -1,5 +1,8 @@
 package com.stackroute.pe1;
 
+/* Program to check given input is of which type.
+   Lowercase or uppercase or digit or special character
+ */
 
 public class CharacterCheck {
     public String check(char input){

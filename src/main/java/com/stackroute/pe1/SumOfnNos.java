@@ -1,5 +1,5 @@
 package com.stackroute.pe1;
-
+// program to return summation of array of numbers
 public class SumOfnNos {
     public int summation(int[] num)
     {

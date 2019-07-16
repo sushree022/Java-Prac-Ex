@@ -6,37 +6,37 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class PallindromeTest {
-    Pallindrome pallindrome;
+public class PalindromeTest {
+    Palindrome palindrome;
 
     @Before
     public void setup()
     {
 //      arrange
-        pallindrome= new Pallindrome();
+        palindrome= new Palindrome();
     }
     @After
     public void teardown()
     {
-        pallindrome= null;
+        palindrome= null;
     }
 
     @Test
     public void givenPallindromeNumberShouldReturnString()
     {
 //        act
-        String actualresul= pallindrome.pallindromenumber(12321);
+        String actualresul= palindrome.palindromenumber(12321);
 //        assert
-        assertEquals("pallindrome", actualresul);
+        assertEquals("palindrome", actualresul);
 
     }
     @Test
     public void givenNotPallindromeNumberShouldReturnString()
     {
 //        act
-        String actualresul= pallindrome.pallindromenumber(56479);
+        String actualresul= palindrome.palindromenumber(56479);
 //        assert
-        assertEquals("not pallindrome", actualresul);
+        assertEquals("not palindrome", actualresul);
 
     }
 
