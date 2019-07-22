@@ -19,7 +19,7 @@ public class CharacterCheckTest {
     }
 
     @Test
-    public void givenCharacterShouldReturnLowerCase() {
+    public void givenLowerCaseCharacterShouldReturnAStringMessage() {
         //act
         String actualResult = this.charactercheck.check('m');
         //assert
@@ -27,7 +27,7 @@ public class CharacterCheckTest {
     }
 
     @Test
-    public void givenCharacterShouldReturnUpperCase() {
+    public void givenUpperCaseCharacterShouldReturnAStringMessage() {
         //act
         String actualResult = this.charactercheck.check('P');
         //assert
@@ -35,7 +35,7 @@ public class CharacterCheckTest {
     }
 
     @Test
-    public void givenCharacterShouldReturnDigit() {
+    public void givenIntegerShouldReturnAStringMessage() {
         //act
         String actualResult = this.charactercheck.check('7');
         //assert
@@ -43,7 +43,7 @@ public class CharacterCheckTest {
     }
 
     @Test
-    public void givenCharacterShouldReturnSpecialSymbol() {
+    public void givenSpecialCharacterShouldReturnAStringMessage() {
         //act
         String actualResult = this.charactercheck.check('#');
         //assert

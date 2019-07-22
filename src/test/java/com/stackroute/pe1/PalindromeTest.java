@@ -22,7 +22,7 @@ public class PalindromeTest {
     }
 
     @Test
-    public void givenPallindromeNumberShouldReturnString()
+    public void givenPallindromeNumberShouldReturnAString()
     {
 //        act
         String actualresul= palindrome.palindromenumber(12321);
@@ -31,7 +31,7 @@ public class PalindromeTest {
 
     }
     @Test
-    public void givenNotPallindromeNumberShouldReturnString()
+    public void givenNotPallindromeNumberShouldReturnAString()
     {
 //        act
         String actualresul= palindrome.palindromenumber(56479);
@@ -39,5 +39,4 @@ public class PalindromeTest {
         assertEquals("not palindrome", actualresul);
 
     }
-
 }

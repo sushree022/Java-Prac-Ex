@@ -30,8 +30,11 @@ public class ReverseStringTest {
 
         assertEquals("eerhsus", actualresult);
     }
+
+
     @Test(expected = NullPointerException.class)
-    public void givenStringShouldReturnNullPointerException()
+    public void givenEmptyStringShouldReturnNullPointerException()
+
     {
         this.reverseString.stringreverse(null);
     }

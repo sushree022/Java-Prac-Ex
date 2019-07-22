@@ -30,9 +30,11 @@ public class RepeatStringTest {
 //        assert
         assertEquals("sushreereereeree", actualresult);
     }
+
     @Test(expected = NullPointerException.class)
-    public void givenStringShouldReturnNullPointerException()
+    public void givenEmptyStringShouldReturnNullPointerException()
     {
+
         this.repeatString.trimstring(null,0);
     }
 }

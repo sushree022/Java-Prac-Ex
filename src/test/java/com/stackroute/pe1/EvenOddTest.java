@@ -21,7 +21,7 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenEvenNumberBetween20to30ShouldReturnString() {
+    public void givenEvenNumberBetween20to30ShouldReturnAString() {
 //        act
         String actualresult = evenOdd.even(24);
 
@@ -31,12 +31,20 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenOddNumberShouldReturnStrings() {
+    public void givenOddNumberBetween20To30ShouldReturnAString() {
 //        act
         String actualresult = evenOdd.even(25);
 
 //        assert
         assertEquals("Tom", actualresult);
+    }
+    @Test
+    public void givenNumberMoreThan30OrLessThan20ShouldReturnAStringMessage() {
+//        act
+        String actualresult = evenOdd.even(50);
+
+//        assert
+        assertEquals("Enter number between 20 and 30", actualresult);
     }
 
 }

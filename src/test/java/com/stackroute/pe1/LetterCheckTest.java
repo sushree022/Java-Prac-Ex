@@ -1,7 +1,6 @@
 package com.stackroute.pe1;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -31,7 +30,7 @@ public class LetterCheckTest {
 
     }
     @Test(expected = NullPointerException.class)
-    public void givenStringShouldReturnNullPointerException()
+    public void givenEmptyStringShouldReturnNullPointerException()
     {
         this.letterCheck.checkword(null);
     }

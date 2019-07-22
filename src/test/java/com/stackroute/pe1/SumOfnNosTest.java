@@ -22,7 +22,7 @@ public class SumOfnNosTest {
     }
 
     @Test
-    public void givenArrayOfNumbersShouldReturnSummation()
+    public void givenArrayOfNumbersShouldReturnSummationOfNumbersInIntegerType()
     {
 //   act
         int numbers[]={12,3,4};

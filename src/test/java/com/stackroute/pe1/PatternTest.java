@@ -21,7 +21,7 @@ public class PatternTest {
     }
 
     @Test
-    public void givenNumberShouldReturnArray() {
+    public void givenNumberShouldReturnAnArrayOfPattern() {
         //act
         int[] actualResult = this.pattern.numpattern(5);
         //assert

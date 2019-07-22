@@ -63,7 +63,7 @@ public class JunitdemoTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void givenStringShouldReturnNullPointerException()
+    public void givenEmptyStringShouldReturnNullPointerException()
     {
         this.junitdemo.reverseString(null);
     }

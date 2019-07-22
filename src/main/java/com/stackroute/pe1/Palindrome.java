@@ -6,22 +6,20 @@ public class Palindrome {
     public String palindromenumber (int num)
     {
 //        initialization of variables
-        int rem, revnum = 0, temp = num;
+        int reminder, reverseNum = 0, tempNum = num;
 //      reversing the digits of the number
         while (num != 0)
         {
-            rem = num % 10;
-            revnum = (revnum * 10) + rem;
+            reminder = num % 10;
+            reverseNum  = (reverseNum * 10) + reminder;
             num = num / 10;
         }
 // checking palindrome or not
-        if (temp == revnum) {
+        if (tempNum == reverseNum) {
             return ("palindrome");
         }
         else
             return ("not palindrome");
-
-
     }
 
 }
